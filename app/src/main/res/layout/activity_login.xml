@@ -2,33 +2,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="24dp"
+    android:background="@android:color/white">
 
+    <!-- Android Text -->
+    <TextView
+        android:id="@+id/androidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <!-- Username Input -->
     <EditText
         android:id="@+id/usernameEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Username"
         android:inputType="text"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="100dp"/>
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:elevation="4dp"
+        android:layout_below="@id/androidText"
+        android:layout_marginTop="40dp"/>
 
+    <!-- Password Input -->
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:hint="Password"
         android:inputType="textPassword"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:elevation="4dp"
         android:layout_below="@id/usernameEditText"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"/>
 
+    <!-- Login Button -->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Login"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:elevation="6dp"
         android:layout_below="@id/passwordEditText"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="24dp"/>
 
 </RelativeLayout>
